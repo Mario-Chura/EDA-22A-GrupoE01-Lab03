@@ -125,7 +125,7 @@ Respuesta.
 
 ### III.	CONCLUSIONES
 #
--Conclusion 1 <br>
+-De lo desarrollado en el presente laboratorio pudimos aprender que las listas son estructuras de datos que nos permiten almacenar y recuperar los datos de modo que el primer elemento en ingresar es el primero en salir, de este modo podemos identificar 3 operaciones básicas: apilar, desopilar y comprobar si la lista esta vacía. <br>
 -Conclusion 2 <br>
 -Conclusion 3 <br>
 -Conclusion 4 <br>
