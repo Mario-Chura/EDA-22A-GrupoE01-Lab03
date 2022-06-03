@@ -45,6 +45,7 @@ public class pila {
 		return dato;
 	}
 
+    //Este metodo me devuelve el primer elemento de la pila si es que esta llena
     public T primero () {
 		if ( empty()) {
 			throw new NoSuchElementException("La Pila esta vacia");
