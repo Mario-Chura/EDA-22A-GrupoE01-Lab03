@@ -52,4 +52,19 @@ public class pila {
 		T dato = root.getDato();
 		return dato;
 	}
+
+    public String toString() {
+		StringBuilder sb = new StringBuilder ();
+		sb.append("[");
+		if ( empty ()) {
+			sb.append("]");
+		} else {
+			Node<T> recorrer = root;
+			while (recorrer != null) {
+				sb.append(recorrer.getDato() + ((recorrer.getsiguiente() != null)?", ":"]"));
+				recorrer = recorrer.getsiguiente();
+			}
+		}
+		return sb.toString();
+	}
 }
