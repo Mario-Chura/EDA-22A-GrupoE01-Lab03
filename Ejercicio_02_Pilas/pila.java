@@ -32,6 +32,7 @@ public class pila {
 		this.conteo++;
 	}
 
+    //Este metodo extrae el primer elemento de la pila si es que esta llena
     public T desapilar () {
 		if ( empty()) {
 			throw new NoSuchElementException("La Pila esta vacia");
