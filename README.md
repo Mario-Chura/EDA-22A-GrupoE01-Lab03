@@ -62,6 +62,52 @@
    1. Pilas iguales (6 puntos) <br>
    #
    2. Pilas (6 puntos) <br>   
+
+- Para este ejercicio se crearon 3 clases ( Node.java, pila.java, pruba_pila.java)
+- En el archivo Node se establece los atributos "datos" de tipo genérico y "siguiente" de tipo Node con los siguientes métodos:
+```py
+	public Node<T> getsiguiente()
+	
+      	public void setsiguiente(Node<T> siguiente)
+	
+	public T getDato()
+	
+	public void setDato(T dato)
+	
+  ```
+ - En la clase pila se colocó como atributos "root" el que hace referencia al nodo inicial y el atributo conteo, quien llevara la cuenta del número de elementos de mi pila, también se implementan los siguientes métodos:
+ ```py
+	// Se devolvera verdadero si la pila tiene cero elementos
+	public boolean empty()
+	
+      	//Vaciamos toda la pila al declarar que root es igual a null
+	public void vaciar()
+	
+	//Para insertar un elemento usamos el atributo root el cual es de tipo generico
+	public void apilar( T dato )
+	
+	//Este metodo extrae el primer elemento de la pila si es que esta llena
+    	public T desapilar ()
+	
+	//Este metodo me devuelve el primer elemento de la pila si es que esta llena
+    	public T primero ()
+  ```
+ - Por último, se creó el método "Prueba_pila.java" para probar estos métodos descritos anteriormente, en la ejecución obtenemos los siguientes resultados:
+ ```py
+	==> Apilamos 10 numeros del 1 al 10
+	[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+	==> Desapilamos el ultimo en ingresar
+	[9, 8, 7, 6, 5, 4, 3, 2, 1]
+	==> Preguntamos si esta vacia la pila
+	false
+	==> Preguntamos cual es el primer numero en la pila
+	9
+	==> Vaciamos la pila
+	[]
+	==> Preguntamos si esta vacia la pila
+	true
+  ```
+-
    #
    3. Colas (6 puntos) <br>
    #
