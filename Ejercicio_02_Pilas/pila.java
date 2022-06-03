@@ -44,4 +44,12 @@ public class pila {
 		}
 		return dato;
 	}
+
+    public T primero () {
+		if ( empty()) {
+			throw new NoSuchElementException("La Pila esta vacia");
+		}
+		T dato = root.getDato();
+		return dato;
+	}
 }
