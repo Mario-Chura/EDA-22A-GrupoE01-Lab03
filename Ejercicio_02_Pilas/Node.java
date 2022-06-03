@@ -15,4 +15,21 @@ public Node(T data){
 public Node(){
     this(null, null);
 }
+
+// Metodos setter y getter
+	
+public Node<T> getsiguiente(){
+    return this.siguiente;
+}
+
+public void setsiguiente(Node<T> siguiente){
+    this.siguiente = siguiente;
+}
+
+public T getDato() {
+    return this.dato;
+}
+public void setDato(T dato){
+    this.dato = dato;
+}
 }
