@@ -12,4 +12,11 @@ public class pila {
 	public pila() {
 		this.conteo = 0;
 	}
+
+    //Metodos
+	
+	// Se devolvera verdadero si la pila tiene cero elementos
+	public boolean empty() {
+		return(conteo == 0);
+	}
 }
