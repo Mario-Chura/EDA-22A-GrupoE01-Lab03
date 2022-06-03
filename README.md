@@ -89,7 +89,7 @@ Respuesta.
 
 <div align="center"><h2> REFERENCIAS Y BIBLIOGRAFÍAL </h2></div> <br>
 
--   1
--   2
--   3
+-   https://www.w3schools.com/java/default.asp
+-   https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html
+-   http://www.it.uc3m.es/java/2012-13/units/pilas-colas/guides/4/guide_es_solution.html
 -   4
