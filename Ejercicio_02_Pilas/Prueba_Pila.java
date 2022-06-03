@@ -10,4 +10,8 @@ public class Prueba_Pila {
 			pilanum.apilar(new Integer(i));
 		}
 		System.out.println(pilanum);
+
+        System.out.println("==> Desapilamos el ultimo en ingresar");
+		pilanum.desapilar();
+		System.out.println(pilanum);
 }
