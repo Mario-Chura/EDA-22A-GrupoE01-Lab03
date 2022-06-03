@@ -24,4 +24,5 @@ public class Prueba_Pila {
         System.out.println("==> Vaciamos la pila");
 		pilanum.vaciar();
 		System.out.println(pilanum);
+    }
 }
