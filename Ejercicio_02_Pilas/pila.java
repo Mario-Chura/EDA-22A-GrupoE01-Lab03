@@ -1,7 +1,7 @@
 package Ejercicio_02_Pilas;
 import java.util.*;
 
-public class pila {
+public class pila <T> {
     //Atributos
 	
 	private Node<T> root;
