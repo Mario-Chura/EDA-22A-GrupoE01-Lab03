@@ -31,4 +31,17 @@ public class pila {
 		this.root = new Node<T>(dato , this.root);
 		this.conteo++;
 	}
+
+    public T desapilar () {
+		if ( empty()) {
+			throw new NoSuchElementException("La Pila esta vacia");
+		}
+		T dato = root.getDato();
+		root = root.getsiguiente();
+		conteo--;
+		if(conteo == 0) {
+			vaciar();
+		}
+		return dato;
+	}
 }
