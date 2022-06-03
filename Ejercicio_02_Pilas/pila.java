@@ -19,4 +19,10 @@ public class pila {
 	public boolean empty() {
 		return(conteo == 0);
 	}
+
+    //Vaciamos toda la pila al declarar que root es igual a null
+	public void vaciar() {
+		root = null;
+		conteo = 0;
+	}
 }
