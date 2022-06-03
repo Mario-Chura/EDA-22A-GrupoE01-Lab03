@@ -6,4 +6,10 @@ public class pila {
 	
 	private Node<T> root;
 	private int conteo;
+
+    	//Constructor
+	
+	public pila() {
+		this.conteo = 0;
+	}
 }
