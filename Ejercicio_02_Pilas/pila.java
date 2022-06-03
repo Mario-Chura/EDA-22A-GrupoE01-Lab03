@@ -25,4 +25,10 @@ public class pila {
 		root = null;
 		conteo = 0;
 	}
+
+    //Para insertar un elemento usamos el atributo root el cual es de tipo generico
+	public void apilar( T dato ) {
+		this.root = new Node<T>(dato , this.root);
+		this.conteo++;
+	}
 }
