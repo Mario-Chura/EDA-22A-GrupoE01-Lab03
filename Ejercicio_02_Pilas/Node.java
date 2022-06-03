@@ -32,4 +32,12 @@ public T getDato() {
 public void setDato(T dato){
     this.dato = dato;
 }
+
+// Imprimir
+public String toString(){
+    if(dato != null)
+        return dato.toString();
+    else
+        return null;
+}
 }
