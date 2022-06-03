@@ -17,4 +17,7 @@ public class Prueba_Pila {
 
         System.out.println("==> Preguntamos si esta vacia la pila");
 		System.out.println(pilanum.empty());
+
+        System.out.println("==> Preguntamos cual es el primer numero en la pila");
+		System.out.println(pilanum.primero());
 }
