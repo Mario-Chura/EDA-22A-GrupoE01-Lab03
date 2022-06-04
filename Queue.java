@@ -59,5 +59,25 @@ public class Queue<E> {
           this.root = this.root.nextNode();
         return cabeza.getData();
       }
+     //remove(): Este método difiere del poll() sólo en que lanza una mensaje si esta cola está vacía.
+     public E remove(){
+        if(this.isEmpty()){
+          System.out.println("La cola esta vacia");
+          return null;
+        }
+        return this.poll();
+      }
+  
+      //-------------Metodo Auxiliares------------------------
+      //isEmpty(): Verifica si la cola esta vacia
+      public boolean isEmpty(){
+        return this.root == null;
+      }
+      //getCola(): devuelve el elemento de la cola
+      public E getCola(){
+        if(this.isEmpty())
+          return null;
+        return this.cola.getData();
+      }
 }
     
