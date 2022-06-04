@@ -1,4 +1,4 @@
-public class StackArray <E> (){
+public class StackArray<E>{
     private int tope;
     private E[ ] array;
 
