@@ -45,5 +45,19 @@ public class Queue<E> {
           return null;
         }
       }
+    //poll(): Devuelve y elimina la cabeza de esta cola, o devuelve null si esta cola está vacía.
+    public E poll(){
+        if(this.isEmpty())
+          return null;
+        Node <E> cabeza = this.root;
+        tope--;//disminuye el contador de los elementos presentes en la cola
+        if(this.root.nextNode() == null){//En caso de que la cola se vacie
+          this.root = null;
+          this.cola = null;
+        }
+        else//Caso contrario asigna el siguiente nodo de root como la nueva cabecera
+          this.root = this.root.nextNode();
+        return cabeza.getData();
+      }
 }
     
