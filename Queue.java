@@ -30,5 +30,20 @@ public class Queue<E> {
           return false;//y se retornara false
         }
       }
+     //peek() : Recupera, pero no elimina, la cabeza de esta cola, o devuelve null si esta cola está vacía.
+     public E peek(){
+        if(this.isEmpty())
+          return null;
+        return this.root.getData();
+      }
+    //element(): Este método difiere de peek() sólo en que lanza un mensaje si esta cola está vacía.
+    public E element(){
+        if(this.peek() != null)
+          return this.root.getData();
+        else{
+          System.out.println("La cola esta vacia");
+          return null;
+        }
+      }
 }
     
