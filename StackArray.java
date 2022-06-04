@@ -13,5 +13,11 @@ public class StackArray<E>{
             System.out.println("Stack esta lleno");
         }
     }
+    public boolean isEmpty (){
+        return this.tope == -1;
+        
+    }
+
+
 
 }
