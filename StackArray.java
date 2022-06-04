@@ -6,4 +6,12 @@ public class StackArray<E>{
         this.array = (E[ ]) new Object[n];
         this.tope = -1;
     }
+    public void push(E x){
+        if(this.tope < this.array.length-1){
+            this.array[++this.tope] = x;
+        }else{
+            System.out.println("Stack esta lleno");
+        }
+    }
+
 }
