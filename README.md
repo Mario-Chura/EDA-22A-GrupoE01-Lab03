@@ -272,6 +272,7 @@ Altura de las pilas igualadas:5
 #
 - ¿Qué similitudes hay entre una Lista Enlazada y una Pila? ( 1 pt) <br>
 Respuesta.
+	- Las listas enlazadas permiten trabajar con todos sus elementos, al contrario de la Pila que es limitado porque solo permite trabajar con el primer elemento insertado eliminando los ultimos que estan en el Tope. 
 #
 - ¿En que casos seria favorable/desfavorable utilizar Pila/Cola? ( 1 pt)<br>
 Respuesta.
@@ -280,7 +281,7 @@ Respuesta.
 ### III.	CONCLUSIONES
 #
 -De lo desarrollado en el presente laboratorio pudimos aprender que las listas son estructuras de datos que nos permiten almacenar y recuperar los datos de modo que el primer elemento en ingresar es el primero en salir, de este modo podemos identificar 3 operaciones básicas: apilar, desopilar y comprobar si la lista esta vacía. <br>
--Conclusion 2 <br>
+-Este laboratorio nos a servido como practica de lo aprendido en teoria, terminar de comprender lo que son las pilas y las colas, y como estas se pueden implementar haciendo uso de memoria estatica con Arrays y memoria dinamica con list. Para este caso en el ejercicio01 la pila se implemento con el uso de memoria estatica con Arrays<br>
 -Conclusion 3 <br>
 -Conclusion 4 <br>
 -Conclusion 5 <br>
