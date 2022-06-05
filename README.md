@@ -162,8 +162,59 @@
         }                   
  }
 ```
-- Resultados al ejecutar Ejercicio01.java
-
+- Resultados al ejecutar Ejercicio01.java, se mostrara lo que sale en consola de manera abreviada para no extender el informe
+```py
+//solicita el tamaño de cada pila
+Ingrese tamaño de la pila-1: 5
+Ingrese tamaño de la pila-2: 3
+Ingrese tamaño de la pila-3: 4
+PILA-1
+Ingrese valor: 
+1
+Ingrese valor: 
+1
+Ingrese valor: 
+1
+Ingrese valor: 
+2
+Ingrese valor: 
+3
+Lista pila-1
+1, 1, 1, 2, 3, //muestra la lista de la pila
+PILA-2
+//se ingresan valores de pila2 ..
+Lista pila-2
+2, 3, 4, //muestra la lista de la pila
+PILA-3
+//se ingresan valores de pila2 ..
+Lista pila-3
+1, 4, 1, 1, //muestra la lista de la pila
+//se muestra las sumas iniciales de cada pila
+-------Sumas Iniciales--------------
+suma pila 1: 8
+suma pila 2: 9
+suma pila 3: 7
+------------------
+//a continuacion se muestra la suma de cada pila luego de realizar el pop() a la pila mayor
+suma p1:8
+suma p2:5
+suma p3:7
+--------------
+suma p1:5
+suma p2:5
+suma p3:7
+--------------
+suma p1:5
+suma p2:5
+suma p3:6
+--------------
+suma p1:5
+suma p2:5
+suma p3:5
+--------------
+//se concluye cuando las 3 pilas llegan a una misma altura
+Altura de las pilas igualadas:5
+```
    2. Pilas (6 puntos) <br>   
 
 - Para este ejercicio se crearon 3 clases ( Node.java, pila.java, pruba_pila.java)
