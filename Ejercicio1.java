@@ -1,16 +1,36 @@
 public class Ejercicio1{
     public static void main(String[] args){
-        Stack<Integer> pila = new StackArray<Integer>(6);
+        StackArray<Integer> pila1 = new StackArray<Integer>(6);
+        StackArray<Integer> pila2 = new StackArray<Integer>(6);
+        StackArray<Integer> pila3 = new StackArray<Integer>(6);
         try{
-            pila.push(12);
-            System.out.println("Tope: "+pila.top());
-            pila.push(14);
-            System.out.println("Tope: "+pila.top());
-            pila.push(20);
-            System.out.println("Tope: "+pila.top());
-            pila.push(30);
-            System.out.println("Tope: "+pila.top());
-            System.out.println(pila);
+            pila1.push(1);
+            pila1.push(1);
+            pila1.push(1);
+            pila1.push(2);
+            pila1.push(3);
+            System.out.println(pila1);
+            //
+            pila2.push(2);
+            pila2.push(3);
+            pila2.push(4);
+            System.out.println(pila2);
+            //
+            pila3.push(1);
+            pila3.push(4);
+            pila3.push(1);
+            pila3.push(1);
+            System.out.println(pila3);
+
+            System.out.println("Sumas Iniciales");
+            System.out.println("suma pila 1: "+pila1.summationStack());
+            System.out.println("suma pila 2: "+pila2.summationStack());
+            System.out.println("suma pila 3: "+pila3.summationStack());
+            System.out.println("------------------");
+            int valor = equalStack(pila1, pila2, pila3);
+            pila1.top();
+            System.out.println("valor:"+valor);
+
         }catch(ExceptionIsEmpty x){
             System.out.println(x.getMessage());
         }
