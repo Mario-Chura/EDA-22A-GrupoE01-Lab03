@@ -60,7 +60,12 @@
 ### I.	SOLUCIÓN DE EJERCICIOS/PROBLEMAS
 #	
    1. Pilas iguales (6 puntos) <br>
-   #
+- Para este ejerciico se crearon las clases (Stack(interface),ExceptionIsEmpty(manejar excepciones),StackArray(contiene la implementacion de la pila))
+-La clase StackArray contiene los metodos necesarios para manejar una Pila(Stack), agregando un metodo adicional que es summation stack que nos sirve para conocer la suma de los valores de la pila(valores enteros para este ejercicio).
+-El metodo equalStack se implemento desde la clase Ejercicio01, con las 3 pilas como parametros.
+-El metodo mayorStack que nos sirve para conocer a la pila con mayor suma de elementos.
+-El metodo pushElements que nos sirve para poder realizar push con valores ingresados desde consola.
+
    2. Pilas (6 puntos) <br>   
 
 - Para este ejercicio se crearon 3 clases ( Node.java, pila.java, pruba_pila.java)
