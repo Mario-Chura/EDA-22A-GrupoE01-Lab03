@@ -215,6 +215,7 @@ suma p3:5
 //se concluye cuando las 3 pilas llegan a una misma altura
 Altura de las pilas igualadas:5
 ```
+#
    2. Pilas (6 puntos) <br>   
 
 - Para este ejercicio se crearon 3 clases ( Node.java, pila.java, pruba_pila.java)
