@@ -162,6 +162,8 @@
         }                   
  }
 ```
+- Resultados al ejecutar Ejercicio01.java
+
    2. Pilas (6 puntos) <br>   
 
 - Para este ejercicio se crearon 3 clases ( Node.java, pila.java, pruba_pila.java)
