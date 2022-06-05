@@ -71,7 +71,7 @@
 	}
 	
   ```
-- El metodo equalStack se implemento desde la clase Ejercicio01, con las 3 pilas como parametros.
+- El metodo equalStack se implemento desde la clase Ejercicio01, con las 3 pilas como parametros. El metodo mayorStack que se muestra en el bucle while se explica mas adelante
 	
 ```py
 // recibe a las 3 pilas como objetos de la clase StackArray
@@ -97,7 +97,29 @@
         return altura; //retorno de la altura
  }
 ```
-- El metodo mayorStack que nos sirve para conocer a la pila con mayor suma de elementos.
+- El metodo mayorStack que nos sirve para conocer a la pila con mayor suma de elementos, para retornar a dicho objeto
+```py
+//recibe a las 3 pilas como parametros
+ public static StackArray mayorStack(StackArray h1,StackArray h2,StackArray h3) {
+	//asignacion de los valores de la suma de las 3 pilas haciendo uso del metodo summationStack() de la clase StackArray.
+        int s1 = h1.summationStack();
+        int s2 = h2.summationStack();
+        int s3 = h3.summationStack();
+	//los siguientes condicionales simplemente para determinar al mayor de los 3
+	//Al encontrarlo se retornara a la pila como objeto StackArray
+        if(s1>s2){
+            if(s1>s3){
+                return h1;
+            }else{
+                return h3;
+            }
+        }else if(s2>s3){
+            return h2;
+        }else{
+            return h3;
+        }
+ }
+```
 - El metodo pushElements que nos sirve para poder realizar push con valores ingresados desde consola.
 
    2. Pilas (6 puntos) <br>   
