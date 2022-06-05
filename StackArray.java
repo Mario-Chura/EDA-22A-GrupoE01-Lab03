@@ -4,8 +4,7 @@ public class StackArray <E> implements Stack<E>{
 
     public StackArray(int n){
         this.array = (E[]) new Object[n];
-        this.tope = -1;
-        private int sumOut=0;
+        this.tope = -1;        
     }
     public void push(E x){
         if(this.tope < this.array.length - 1){
@@ -42,8 +41,8 @@ public class StackArray <E> implements Stack<E>{
     }
     public int summationStack(){
         int suma =0;
-        for(int i=0;i<this.tope;i++){
-            suma+=(Integer)this.array[i];
+        for(int i=0;i<=this.tope;i++){
+            suma += (Integer)this.array[i];
         }
         return suma;
     }

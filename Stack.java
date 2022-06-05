@@ -3,5 +3,6 @@
     E pop() throws ExceptionIsEmpty;
     E top() throws ExceptionIsEmpty;
     boolean isEmpty ();
+    int summationStack();
 }
 
