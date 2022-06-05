@@ -72,40 +72,33 @@
 	
   ```
 - El metodo equalStack se implemento desde la clase Ejercicio01, con las 3 pilas como parametros.
+	
+```py
 	// recibe a las 3 pilas como objetos de la clase StackArray
 	// se agrega a ExceptionIsEmpty por hacer uso del metodo pop() dentro de la funcion
-```py
-	
 	public static int equalStack(StackArray h1,StackArray h2,StackArray h3)throws ExceptionIsEmpty{
 		/** */
 		// ...
-		/** */
-```
-```py		
+		/** */		
         StackArray may; //"La Pila(stack) mayor"
-        while(cond){            
-            mayorStack(h1,h2,h3).pop(); //al mayor de los 3 se le quita un elemento con el metodo pop()
-			/** */
-			// ...
-			/** */
-```			
-	//A continuacion se realiza la asignacion de los valores que tengan las sumas de las pilas
-```py	
-            s1=h1.summationStack();
-            s2=h2.summationStack();
-            s3=h3.summationStack();
-```
-	//La siguiente condicion funciona para concluir el bucle cuando la suma de los 3 sean iguales 
-```py	
-            if(s1 == s2 && s1 == s3){
-                cond=false;
-            }
+        	while(cond){            
+            	mayorStack(h1,h2,h3).pop(); //al mayor de los 3 se le quita un elemento con el metodo pop()
+				/** */
+				// ...
+				/** */
+		//A continuacion se realiza la asignacion de los valores que tengan las sumas de las pilas	
+            	s1=h1.summationStack();
+            	s2=h2.summationStack();
+            	s3=h3.summationStack();
+	    //La siguiente condicion funciona para concluir el bucle cuando la suma de los 3 sean iguales 	
+            	if(s1 == s2 && s1 == s3){
+                	cond=false;
+            	}
         }
-```
 	//cuando el bucle finalize retornamos la altura que sera la suma de cualquiera de las 3 pilas
-```py
-        altura = h1.summationStack();//los 3 tendran la misma altura
-        return altura; //retorno de la altura
+
+        		altura = h1.summationStack();//los 3 tendran la misma altura
+        		return altura; //retorno de la altura
     }
 ```
 - El metodo mayorStack que nos sirve para conocer a la pila con mayor suma de elementos.
