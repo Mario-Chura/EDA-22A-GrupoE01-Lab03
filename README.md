@@ -76,16 +76,12 @@
 ```py
 	// recibe a las 3 pilas como objetos de la clase StackArray
 	// se agrega a ExceptionIsEmpty por hacer uso del metodo pop() dentro de la funcion
-	public static int equalStack(StackArray h1,StackArray h2,StackArray h3)throws ExceptionIsEmpty{
-		/** */
-		// ...
-		/** */		
-        StackArray may; //"La Pila(stack) mayor"
+	public static int equalStack(StackArray h1,StackArray h2,StackArray h3)throws ExceptionIsEmpty{		
+		// ...				
+        	StackArray may; //"La Pila(stack) mayor"
         	while(cond){            
-            	mayorStack(h1,h2,h3).pop(); //al mayor de los 3 se le quita un elemento con el metodo pop()
-				/** */
-				// ...
-				/** */
+            	mayorStack(h1,h2,h3).pop(); //al mayor de los 3 se le quita un elemento con el metodo pop()				
+				// ...				
 		//A continuacion se realiza la asignacion de los valores que tengan las sumas de las pilas	
             	s1=h1.summationStack();
             	s2=h2.summationStack();
