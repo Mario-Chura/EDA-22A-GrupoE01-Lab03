@@ -5,9 +5,10 @@ public class StackArray <E> implements Stack<E>{
     public StackArray(int n){
         this.array = (E[]) new Object[n];
         this.tope = -1;
+        private int sumOut=0;
     }
     public void push(E x){
-        if(this.tope < this.array.length-1){
+        if(this.tope < this.array.length - 1){
             this.array[++this.tope] = x;
         }else{
             System.out.println("Stack esta lleno");
@@ -18,7 +19,12 @@ public class StackArray <E> implements Stack<E>{
         
     }
     public E pop() throws ExceptionIsEmpty{
-        return null;
+        if(isEmpty()){
+            throw new ExceptionIsEmpty("Stack esta vacio...");
+        }
+        E out = this.array[this.tope];
+        this.tope--;
+        return out;
     }
     public E top() throws ExceptionIsEmpty{
         if(isEmpty()){
