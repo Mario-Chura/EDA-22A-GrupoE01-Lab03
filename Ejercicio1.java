@@ -22,9 +22,8 @@ public class Ejercicio1{
         int s1,s2,s3;        
         boolean cond=true;
         StackArray may;
-        while(cond){
-            //hacer pop a la pila con la mayor suma de los 3
-            //
+        while(cond){            
+            mayorStack(h1,h2,h3).pop();
             System.out.println("suma p1:"+h1.summationStack());
             System.out.println("suma p2:"+h2.summationStack());
             System.out.println("suma p3:"+h3.summationStack());
@@ -39,6 +38,23 @@ public class Ejercicio1{
         altura = h1.summationStack();//los 3 tendran la misma altura
         return altura;
     }
+    public static StackArray mayorStack(StackArray h1,StackArray h2,StackArray h3) {
+        int s1 = h1.summationStack();
+        int s2 = h2.summationStack();
+        int s3 = h3.summationStack();
+        if(s1>s2){
+            if(s1>s3){
+                return h1;
+            }else{
+                return h3;
+            }
+        }else if(s2>s3){
+            return h2;
+        }else{
+            return h3;
+        }
+    }
+
 
 
 
