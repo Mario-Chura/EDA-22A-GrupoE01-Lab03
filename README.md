@@ -135,8 +135,6 @@
  }
 ```
 - Desde el metodo main de la clase Ejercicio01 se hace aplicacion del ejercicio
-
-   2. Pilas (6 puntos) <br>   
 ```py
  public static void main(String[] args){
     //...
@@ -147,25 +145,25 @@
         StackArray<Integer> pila2 = new StackArray<Integer>(t2);
         StackArray<Integer> pila3 = new StackArray<Integer>(t3);
         try{
-		// se ingresan por consola los elementos de cada pila y se muestran en conjunto
+	// se ingresan por consola los elementos de cada pila y se muestran en conjunto
             System.out.println("PILA-1");
             pushElements(pila1, t1);
             System.out.println("Lista pila-1");
             System.out.println(pila1);
-		//Se realiza los mismo para las demas pilas ...
-		//...
-		// Al valor entero que retorna el metodo equalStack() se asigna a la variable valor
+	//Se realiza los mismo para las demas pilas ...
+	//...
+	// Al valor entero que retorna el metodo equalStack() se asigna a la variable valor
             int valor = equalStack(pila1, pila2, pila3);
 	    //se muestra la altura en consola
             System.out.println("Altura de las pilas igualadas:"+valor);
 
         }catch(ExceptionIsEmpty x){ //aqui se hace uso la clase ExceptionIsEmpty para el manejo de excepciones
             System.out.println(x.getMessage());
-        }
-            
-        
+        }                   
  }
 ```
+   2. Pilas (6 puntos) <br>   
+
 - Para este ejercicio se crearon 3 clases ( Node.java, pila.java, pruba_pila.java)
 - En el archivo Node se establece los atributos "datos" de tipo genérico y "siguiente" de tipo Node con los siguientes métodos:
 ```py
