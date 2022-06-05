@@ -40,5 +40,11 @@ public class StackArray <E> implements Stack<E>{
         }
         return str;
     }
-
+    public int summationStack(){
+        int suma =0;
+        for(int i=0;i<this.tope;i++){
+            suma+=(Integer)this.array[i];
+        }
+        return suma;
+    }
 }
