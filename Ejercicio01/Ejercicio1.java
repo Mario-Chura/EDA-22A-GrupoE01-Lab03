@@ -1,35 +1,40 @@
+import java.util.*;
 public class Ejercicio1{
+    
     public static void main(String[] args){
-        StackArray<Integer> pila1 = new StackArray<Integer>(6);
-        StackArray<Integer> pila2 = new StackArray<Integer>(6);
-        StackArray<Integer> pila3 = new StackArray<Integer>(6);
-        try{
-            pila1.push(1);
-            pila1.push(1);
-            pila1.push(1);
-            pila1.push(2);
-            pila1.push(3);
-            System.out.println(pila1);
-            //
-            pila2.push(2);
-            pila2.push(3);
-            pila2.push(4);
-            System.out.println(pila2);
-            //
-            pila3.push(1);
-            pila3.push(4);
-            pila3.push(1);
-            pila3.push(1);
-            System.out.println(pila3);
+        Scanner sc = new Scanner(System.in);
+        int t1,t2,t3;
+        System.out.print("Ingrese tamaño de la pila-1: ");
+        t1=sc.nextInt();
+        System.out.print("Ingrese tamaño de la pila-2: ");
+        t2=sc.nextInt();
+        System.out.print("Ingrese tamaño de la pila-3: ");
+        t3=sc.nextInt();
 
-            System.out.println("Sumas Iniciales");
+        StackArray<Integer> pila1 = new StackArray<Integer>(t1);
+        StackArray<Integer> pila2 = new StackArray<Integer>(t2);
+        StackArray<Integer> pila3 = new StackArray<Integer>(t3);
+        try{
+            System.out.println("PILA-1");
+            pushElements(pila1, t1);
+            System.out.println("Lista pila-1");
+            System.out.println(pila1);
+            System.out.println("PILA-2");
+            pushElements(pila2, t2);
+            System.out.println("Lista pila-2");
+            System.out.println(pila2);
+            System.out.println("PILA-3");
+            pushElements(pila3, t3);
+            System.out.println("Lista pila-3");
+            System.out.println(pila3);            
+
+            System.out.println("-------Sumas Iniciales--------------");
             System.out.println("suma pila 1: "+pila1.summationStack());
             System.out.println("suma pila 2: "+pila2.summationStack());
             System.out.println("suma pila 3: "+pila3.summationStack());
             System.out.println("------------------");
             int valor = equalStack(pila1, pila2, pila3);
-            pila1.top();
-            System.out.println("valor:"+valor);
+            System.out.println("Altura de las pilas igualadas:"+valor);
 
         }catch(ExceptionIsEmpty x){
             System.out.println(x.getMessage());
@@ -74,8 +79,15 @@ public class Ejercicio1{
             return h3;
         }
     }
-
-
-
-
+    public static void pushElements(StackArray h,int t){
+        Scanner sc = new Scanner(System.in);
+        int n;
+        for(int i=0;i<t;i++){
+            System.out.println("Ingrese valor: ");
+            n=sc.nextInt();
+            h.push(n);
+        }
+         
+     }
+ 
 }
