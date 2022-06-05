@@ -121,7 +121,19 @@
  }
 ```
 - El metodo pushElements que nos sirve para poder realizar push con valores ingresados desde consola.
-
+```py
+//este metodo esta siendo usado en el metodo main() para que se ingresen los valores de la pila por consola
+ public static void pushElements(StackArray h,int t){
+    //...
+	//se hace uso de un bucle for para ingresar los valores de la pila segun su tamaño
+        for(int i=0;i<t;i++){
+            System.out.println("Ingrese valor: ");
+            n=sc.nextInt();
+            h.push(n); //se realiza el push del valor a la pila
+        }
+         
+ }
+```
    2. Pilas (6 puntos) <br>   
 
 - Para este ejercicio se crearon 3 clases ( Node.java, pila.java, pruba_pila.java)
