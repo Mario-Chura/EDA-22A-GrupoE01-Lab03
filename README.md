@@ -76,18 +76,20 @@
 	// recibe a las 3 pilas como objetos de la clase StackArray
 	// se agrega a ExceptionIsEmpty por hacer uso del metodo pop() dentro de la funcion
 	public static int equalStack(StackArray h1,StackArray h2,StackArray h3)throws ExceptionIsEmpty{
-        ...
-		....
-        StackArray may; //Pila(stack) mayor
+		/** */
+		// ...
+		/** */
+        StackArray may; //"La Pila(stack) mayor"
         while(cond){            
             mayorStack(h1,h2,h3).pop(); //al mayor de los 3 se le quita un elemento con el metodo pop()
-			...
-			....
-			//asignacion de los valores que tengan las sumas de las pilas
+			/** */
+			// ...
+			/** */
+			//A continuacion se realiza la asignacion de los valores que tengan las sumas de las pilas
             s1=h1.summationStack();
             s2=h2.summationStack();
             s3=h3.summationStack();
-			//la siguiente condicion funciona para concluir el bucle cuando la suma de los 3 sean iguales 
+			//La siguiente condicion funciona para concluir el bucle cuando la suma de los 3 sean iguales 
             if(s1 == s2 && s1 == s3){
                 cond=false;
             }
