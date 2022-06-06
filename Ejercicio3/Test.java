@@ -2,8 +2,8 @@ public class Test{
   public static void main(String [] args){
     Queue <Integer> lista = new Queue<>(3);
 
-    System.out.println("==> Añadiendo valores a la cola <==");
-		lista.add(15);
+    		System.out.println("==> Añadiendo valores a la cola <==");
+ 		lista.add(15);
 		System.out.println(lista.getCola());// 15
 		lista.add(20);
 		System.out.println(lista.getCola());// 20
