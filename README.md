@@ -58,7 +58,30 @@
 <div align="center"><h2> SOLUCIÓN Y RESULTADOS </h2></div>
 
 ### I.	SOLUCIÓN DE EJERCICIOS/PROBLEMAS
-#	
+#
+- En el desarrollo de los ejercicios nuestras carpetas de trabajo se distribuyen de la siguiente manera:
+    ```py
+	   └|──EDA-22A-GrupoE01-Lab03
+	    |
+	    ├───Ejercicio01
+	    │       Ejercicio1.java
+	    │       ExceptionIsEmpty.java
+	    │       Stack.java
+	    │       StackArray.java
+	    │
+	    ├───Ejercicio_02_Pilas
+	    │       Node.java
+	    │       Prueba_Pila.java
+	    │       pila.java
+	    │
+	    |───Ejercicio03
+	    |    Node.java
+	    |    Queue.java
+	    |    Test.java
+	    |
+	    |___README.md
+    ```
+#
    1. Pilas iguales (6 puntos) <br>
 - Para este ejercicio se crearon las clases (Stack(interface), ExceptionIsEmpty(manejar excepciones),  StackArray(contiene la implementacion de la pila))
 - La clase StackArray contiene los metodos necesarios para manejar una Pila(Stack), agregando un metodo adicional que es summation stack que nos sirve para conocer la suma de los valores de la pila(valores enteros para este ejercicio).
