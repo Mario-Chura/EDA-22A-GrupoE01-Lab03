@@ -247,7 +247,7 @@ Altura de las pilas igualadas:5
 	//Este metodo me devuelve el primer elemento de la pila si es que esta llena
     	public T primero ()
   ```
- - Por último, se creó el método "Prueba_pila.java" para probar estos métodos descritos anteriormente, en la ejecución obtenemos los siguientes resultados:
+ - Por último, se creó la clase "Prueba_pila.java" para probar estos métodos descritos anteriormente, en la ejecución obtenemos los siguientes resultados:
  ```py
 	==> Apilamos 10 numeros del 1 al 10
 	[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
