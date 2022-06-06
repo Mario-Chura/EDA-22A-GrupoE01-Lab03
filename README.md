@@ -265,7 +265,46 @@ Altura de las pilas igualadas:5
 -
    #
    3. Colas (6 puntos) <br>
-   #
+  - En la clase Queue.java se crearon los siguientes métodos para la cola su funcionalidad se describe en los comentarios:
+ ```py
+	//Añade un elemento a Queue sin sobrepasar la capacidad de la cola
+	public boolean offer(E e){
+	
+      	//Funciona igual que offer() con la diferencia que muestra un mensaje de limite maximo alcanzado
+	public boolean add(E e){
+	
+	//peek() : Recupera, pero no elimina, la cabeza de esta cola, o devuelve null si esta cola está vacía.
+	 public E peek(){
+	
+	//element(): Este método difiere de peek() sólo en que lanza un mensaje si esta cola está vacía.
+    	 public E element(){
+	
+	//poll(): Devuelve y elimina la cabeza de esta cola, o devuelve null si esta cola está vacía.
+    	public E poll(){
+	
+	//remove(): Este método difiere del poll() sólo en que lanza una mensaje si esta cola está vacía.
+	public E remove(){
+  ```
+ - Se creo la clase "Test.java" para ejecutar los resultados, se obtuvo lo siguiente:
+ ```py
+	==> Añadiendo valores a la cola <==
+	15
+	20
+	25
+	==> Agregamos un elemento mas a la cola superando el limite <==
+	Limite maximo alcanzado
+	==> Removemos elemento de la cola <==
+	==> Llamamos a la nodo de la cola  <==
+	20
+	==> Removemos elemento de la cola <==
+	==> Llamamos a la nodo de la cola  <==
+	25
+	==> Removemos elemento de la cola <==
+	==> Llamamos a nodo cola, como esta vacia sale el sig. mensaje <==
+	La cola esta vacia
+	==> Eliminamos elementos, como esta vacia sale el sig. mensaje <==
+	La cola esta vacia
+  ```
    
 #
 
